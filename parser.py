@@ -12,15 +12,15 @@ data = json.load(lines)
 def send_email(dashboard_name, email):
     print('[+] ' + dashboard_name + ' ---> ' + email + ' >>> EMAIL SENT <<<')
     message = """
-    Hi there,\r
+    Hi There,\r
 
-    This is to let you know we encountered a system loading issue within our Google Cloud Platform. This has affected your Tableau Dashboard """ + str(dashboard_name.strip()) + """.
-    We are currently rectifying the issue and will get back to you once the process has completed loading.
-    Sorry for the inconvenience caused.\r
-    If you have any questions, please get in touch with me.\r
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX """ + str(dashboard_name.strip()) + """.
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\r
+    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\r
 
     Thanks!
-    Mini
+    XXXXXX
     """
     msg = MIMEText(message, 'plain')
     msg['Subject'] = dashboard_name + ' - DASHBOARD GOT AFFECTED'   # You can modify this if you wish
